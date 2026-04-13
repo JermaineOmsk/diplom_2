@@ -11,6 +11,3 @@ def create_and_delete_user():
     token = response.json()["accessToken"]
     yield  response, payload, token
     requests.delete(Endpoints.data_user, headers={'Authorization': token})
-
-
-
