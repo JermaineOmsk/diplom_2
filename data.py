@@ -1,10 +1,13 @@
+class Urls:
+
+    base_url = 'https://stellarburgers.education-services.ru/'
 class Endpoints:
 
-    create_user = 'https://stellarburgers.education-services.ru/api/auth/register'
-    login_user = 'https://stellarburgers.education-services.ru/api/auth/login'
-    data_user = 'https://stellarburgers.education-services.ru/auth/user'
-    create_order = 'https://stellarburgers.education-services.ru/api/orders'
-    logout = 'https://stellarburgers.education-services.ru/api/auth/logout'
+    create_user = f'{Urls.base_url}api/auth/register'
+    login_user = f'{Urls.base_url}api/auth/login'
+    data_user = f'{Urls.base_url}auth/user'
+    create_order = f'{Urls.base_url}api/orders'
+    logout = f'{Urls.base_url}api/auth/logout'
 class UserData:
     no_name = {"email": "jermaine1989@yandex.ru",
                      "password": "12345"}
